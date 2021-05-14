@@ -12,57 +12,40 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Blog"
-    name: "blog"
-    folder: "src/posts"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
-  - label: "Settings"
-    name: "settings"
+  - label: Студсовет
+    name: site
     editor:
       preview: false
     files:
-      - label: "Navigation"
-        name: "items"
-        file: "src/_data/navigation.yaml"
+      - label: Мультиссылка
+        name: multilink
+        file: "src/_data/multilink.yaml"
         fields:
-          - label: Nav Items
-            name: items
+          - { label: Заголовок, name: heading, widget: string, required: false }
+          - { label: Логотип, name: logo, widget: image, allow_multiple: false, required: false }
+          - { label: Цвет фона, name: text, widget: color, required: false, allowInput: true }
+          - { label: Фоновый паттерн, name: pattern, widget: image, allow_multiple: false, required: false }
+          - label: Список
+            name: list
             widget: list
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: Title, name: text, widget: string }
-              - { label: URL, name: url, widget: string }
-      - label: "Quick Links"
-        name: "links"
-        file: "src/_data/quicklinks.yaml"
-        fields:
-          - label: Nav Items
-            name: links
-            widget: list
-            collapsed: false
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: URL, name: url, widget: string }
-              - { label: Description, name: desc, widget: string }
-      - label: "Meta Settings"
-        name: "settings"
-        file: "src/_data/settings.yaml"
-        fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Author, name: author, widget: string }
-          - { label: URL, name: url, widget: string }
+            types:
+              - label: Подзаголовок
+                name: heading
+                widget: object
+                fields:
+                  - { label: Заголовок, name: heading, widget: string }
+              - label: Параграф текста
+                name: paragraph
+                widget: object
+                fields:
+                  - { label: Параграф, name: text, widget: text }
+              - label: Кнопка
+                name: link
+                widget: object
+                fields:
+                  - { label: Подпись, name: text, widget: string }
+                  - { label: Ссылка, name: href, widget: string }
+                  - { label: Цвет, name: href, widget: color, required: false, allowInput: true }
+          - { label: ВКонтакте, name: vk, widget: string, required: false }
+          - { label: Тик-Ток, name: tiktok, widget: string, required: false }
+          - { label: Инстаграм, name: ig, widget: string, required: false }
