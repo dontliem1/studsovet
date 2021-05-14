@@ -23,7 +23,7 @@ collections:
         fields:
           - { label: Заголовок, name: heading, widget: string, required: false }
           - { label: Логотип, name: logo, widget: image, allow_multiple: false, required: false }
-          - { label: Цвет фона, name: text, widget: color, required: false, allowInput: true }
+          - { label: Цвет фона, name: background, widget: color, required: false, allowInput: true }
           - { label: Фоновый паттерн, name: pattern, widget: image, allow_multiple: false, required: false }
           - label: Список
             name: list
@@ -45,7 +45,7 @@ collections:
                 fields:
                   - { label: Подпись, name: text, widget: string }
                   - { label: Ссылка, name: href, widget: string }
-                  - { label: Цвет, name: href, widget: color, required: false, allowInput: true }
+                  - { label: Цвет, name: color, widget: color, required: false, allowInput: true }
           - { label: ВКонтакте, name: vk, widget: string, required: false }
           - { label: Тик-Ток, name: tiktok, widget: string, required: false }
           - { label: Инстаграм, name: ig, widget: string, required: false }
