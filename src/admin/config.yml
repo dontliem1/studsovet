@@ -7,6 +7,7 @@ backend:
   # repo: surjithctly/neat-starter
 media_folder: "src/static/img"
 public_folder: "/static/img"
+locale: "ru"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
@@ -21,8 +22,9 @@ collections:
         name: multilink
         file: "src/_data/multilink.yaml"
         fields:
-          - { label: Заголовок, name: heading, widget: string, required: false }
+          - { label: Заголовок, name: heading, widget: string, hint: Отображается на вкладке и если нет логотипа }
           - { label: Логотип, name: logo, widget: image, allow_multiple: false, required: false }
+          - { label: Цвет текста, name: color, widget: color, required: false, allowInput: true }
           - { label: Цвет фона, name: background, widget: color, required: false, allowInput: true }
           - { label: Фоновый паттерн, name: pattern, widget: image, allow_multiple: false, required: false }
           - label: Список
@@ -45,7 +47,10 @@ collections:
                 fields:
                   - { label: Подпись, name: text, widget: string }
                   - { label: Ссылка, name: href, widget: string }
-                  - { label: Цвет, name: color, widget: color, required: false, allowInput: true }
+                  - { label: Цвет текста, name: color, widget: color, required: false, allowInput: true }
+                  - { label: Цвет фона, name: color, widget: background, required: false, allowInput: true }
+          - { label: Цвет соцсетей, name: fill, widget: color, required: false, allowInput: true }
+          - { label: Цвет фона соцсетей, name: socialBg, widget: color, required: false, allowInput: true }
           - { label: ВКонтакте, name: vk, widget: string, required: false }
           - { label: Тик-Ток, name: tiktok, widget: string, required: false }
           - { label: Инстаграм, name: ig, widget: string, required: false }

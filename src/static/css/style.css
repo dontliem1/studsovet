@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'PTRoot';
+    src:
+            url('../font/PT-Root-UI_Bold.woff2') format('woff2'),
+            url('../font/PT-Root-UI_Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PTRoot';
+    src:
+            url('../font/PT-Root-UI_Light.woff2') format('woff2'),
+            url('../font/PT-Root-UI_Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.multilink {
+    font-family: 'PTRoot', sans-serif;
+    text-align: center;
+    background-position: right top;
+    background-size: 100% 100vh, 8em;
+}
+.container {
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+@media (min-width: 48em) {
+    body {
+        font-size: 150%;
+    }
+}
+@media (min-width: 96em) {
+    body {
+        font-size: 200%;
+    }
+}
+
+.link--shadow {
+    transition: filter .2s;
+    text-decoration: none;
+    box-shadow: 0 .5em 1em rgba(0,0,0,.1);
+}
+.link--shadow:hover {
+    filter: brightness(.8);
+}
+
+.multilink__heading {
+    margin-top: 1.75em;
+    margin-bottom: 1em;
+}
+.multilink__logo {
+    background-color: #fff;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.multilink__links {
+    margin-bottom: 2em;
+}
+.multilink__links_heading {
+    font-size: 1.25em;
+    margin-bottom: .5em;
+}
+.multilink__link {
+    display: block;
+    padding: .7em 1.5em .8em;
+    border-radius: 2em;
+    margin-bottom: .5em;
+    background-color: #fff;
+    color: #000;
+}
+
+.multilink__social_link {
+    display: inline-block;
+    padding: 1.5em;
+    border-radius: 1.5em;
+    line-height: 1;
+    margin-left: .25em;
+    margin-right: .25em;
+    position: relative;
+    color: inherit;
+    background-color: currentColor;
+}
+.multilink__social_svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: auto;
+    transform: translate(-50%,-50%);
+}

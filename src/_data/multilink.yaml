@@ -1,12 +1,14 @@
-title: Surjith S M
 heading: Студсовет
 background: "#009aff"
+logo: "/static/img/logo.svg"
+pattern: "/static/img/pattern.png"
+color: "#fff"
 list:
   - type: link
     text: Областной студенческий форум
-    href: Областной студенческий форум
+    href: https://vk.com/studsovet72?w=app6013442_-8691896%2523form_id%253D35
   - type: heading
-    heading: Треки исследования студенческой среды Тюменской области
+    heading: Треки исследования студенческой среды Тюменской области
   - type: link
     text: Образование
     href: https://vk.com/app5619682_-8691896#562786
