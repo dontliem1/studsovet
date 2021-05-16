@@ -10,9 +10,8 @@
 @font-face {
     font-family: 'PTRoot';
     src:
-            url('../font/PT-Root-UI_Light.woff2') format('woff2'),
-            url('../font/PT-Root-UI_Light.woff') format('woff');
-    font-weight: 300;
+            url('../font/PT-Root-UI_Regular.woff2') format('woff2'),
+            url('../font/PT-Root-UI_Regular.woff') format('woff');
     font-style: normal;
     font-display: swap;
 }
@@ -48,6 +47,7 @@
     bottom: 0;
     z-index: -1;
     background-repeat: no-repeat;
+    opacity: .4;
 }
 .multilink::before {
     background-size: 7.2em;
@@ -81,7 +81,6 @@
 .link--shadow {
     transition: filter .2s;
     text-decoration: none;
-    box-shadow: 0 .5em 1em rgba(0,0,0,.1);
 }
 .link--shadow:hover {
     filter: brightness(.8);
