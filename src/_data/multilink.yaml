@@ -1,7 +1,6 @@
 heading: Студсовет
 background: "#009aff"
 logo: "/static/img/logo.svg"
-pattern: "/static/img/pattern.png"
 color: "#fff"
 list:
   - type: link

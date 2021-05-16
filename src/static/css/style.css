@@ -36,8 +36,28 @@
 .multilink {
     font-family: 'PTRoot', sans-serif;
     text-align: center;
-    background-position: right top;
-    background-size: 100% 100vh, 8em;
+}
+.multilink::before,
+.multilink::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+.multilink::before {
+    background-size: 7.2em;
+    background-position: top right;
+    background-image: url("/static/img/pattern_top.svg");
+}
+.multilink::after {
+    background-size: 19.2em;
+    background-position: bottom left;
+    background-image: url("/static/img/pattern_bottom.svg");
 }
 .container {
     max-width: 20em;
@@ -98,13 +118,16 @@
     color: #000;
 }
 
+.multilink__social_list {
+    margin-bottom: 2em;
+}
 .multilink__social_link {
     display: inline-block;
     padding: 1.5em;
     border-radius: 1.5em;
     line-height: 1;
-    margin-left: .25em;
-    margin-right: .25em;
+    margin-left: .5em;
+    margin-right: .5em;
     position: relative;
     color: inherit;
     background-color: currentColor;

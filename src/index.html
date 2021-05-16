@@ -16,7 +16,10 @@ path: home
             {% elseif item.type === 'paragraph' %}
                 <p class="multilink__links_paragraph">{{item.text}}</p>
             {% else %}
-                <a class="multilink__link link--shadow" href="{{item.href}}">{{item.text}}</a>
+                <a class="multilink__link link--shadow" href="{{item.href}}" style="
+                    {% if item.color %}color: {{item.color}};{% endif %}
+                    {% if item.background %}background-color: {{item.background}};{% endif %}
+">{{item.text}}</a>
             {% endif %}
         {% endfor %}
     </div>

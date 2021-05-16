@@ -15,7 +15,6 @@
   </head>
   <body class="multilink" style="
   {% if multilink.background %}background-color: {{multilink.background}};{% endif %}
-  {% if multilink.pattern %}background-image: linear-gradient(225deg, transparent 6.6em, {{multilink.background}} 6.6em 71.25%, transparent 71.25%), url({{multilink.pattern}});{% endif %}
   {% if multilink.color %}color: {{multilink.color}};{% endif %}
 ">
     {{ content | safe }}
