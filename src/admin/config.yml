@@ -8,6 +8,8 @@ backend:
 media_folder: "src/static/img"
 public_folder: "/static/img"
 locale: "ru"
+logo_url: "/static/img/logo.svg"
+site_url: https://wonderful-archimedes-e9ebc4.netlify.app
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
