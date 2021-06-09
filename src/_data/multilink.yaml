@@ -6,13 +6,8 @@ list:
   - type: paragraph
     text: Наше объединение создаёт и воплощает в жизнь областные проекты для
       лидеров, спортсменов и просто творческих и талантливых студентов.
-  - type: link
-    text: Фото-отчет с Областного студенческого форума
-    href: https://vk.com/album-8691896_281146236
-    background: "#5971f6"
-    color: "#ffffff"
   - type: heading
-    heading: Треки исследования студенческой среды Тюменской области
+    heading: Исследование студенческой среды Тюменской области
   - type: link
     text: Образование
     href: https://vk.com/app5619682_-8691896#562786
@@ -22,5 +17,13 @@ list:
   - type: link
     text: " Карьера"
     href: https://vk.com/app5619682_-8691896#565507
+  - type: link
+    text: Жилье
+    href: https://vk.com/app5619682_-8691896#566296
+  - type: link
+    text: Фото-отчет с Областного студенческого форума
+    href: https://vk.com/album-8691896_281146236
+    background: "#5971f6"
+    color: "#ffffff"
 vk: https://vk.com/studsovet72
 tiktok: https://www.tiktok.com/@studenty72
