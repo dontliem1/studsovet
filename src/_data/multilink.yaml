@@ -7,6 +7,9 @@ list:
     text: Наше объединение создаёт и воплощает в жизнь областные проекты для
       лидеров, спортсменов и просто творческих и талантливых студентов.
   - type: link
+    text: Регистрация на выборы в Студсовет Тюменской области
+    href: " https://moi-portal.ru/proekty/studsovet-2021/"
+  - type: link
     href: https://vk.com/feed?q=%23%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%B072&section=search
     text: Права студента
   - type: link
