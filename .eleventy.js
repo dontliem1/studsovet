@@ -1,5 +1,4 @@
 const yaml = require("js-yaml");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
@@ -9,13 +8,10 @@ module.exports = function (eleventyConfig) {
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
 
-  // Syntax Highlighting for Code blocks
-  eleventyConfig.addPlugin(syntaxHighlight);
-
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
   eleventyConfig.addDataExtension("yaml", (contents) =>
-    yaml.safeLoad(contents)
+    yaml.load(contents)
   );
 
   // Copy Static Files to /_Site
